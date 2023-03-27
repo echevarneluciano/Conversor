@@ -33,7 +33,7 @@ try {
         Double dol = Double.valueOf(dolar);
         conversion.setValue(dol * 0.8 + "");
     }
-} catch (NumberFormatException e) {
+} catch (Exception e) {
     throw new RuntimeException(e);
 }
 }
