@@ -30,11 +30,7 @@ public class MainActivity extends AppCompatActivity {
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(binding.radioEuroDolar.isChecked()){
-                mv.Conversion("",binding.etEuros.getText().toString());}
-                if(binding.radioDolarEuro.isChecked()){
-                    mv.Conversion(binding.etDolar.getText().toString(),"");
-                }
+                mv.Conversion(binding.etDolar.getText().toString(),binding.etEuros.getText().toString());
             }
         });
         binding.radioDolarEuro.setOnClickListener(new View.OnClickListener() {
